@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const name = "Abdullah Faqih";
+        const namaDepan = "Abdullah";
+        const namaAkhir = "Faqih";
+        const template = `Name : ${name} ${namaDepan} ${namaAkhir}`;
+
+        console.info(template);
+
+        // Expresion di string template
+        const nilai =  90;
+        const template2 = `Nama : ${name}, lulu : ${nilai>75}`;
+        console.info(template2);
+
+        // Multiline String
+        let multiLineString = `
+        Nama Saya Abdullah Faqih
+        Hello World
+        `;
+
+        document.writeln("<pre>");
+        document.writeln(multiLineString);
+        document.writeln("</pre>");
+    </script>
+</body>
+</html>

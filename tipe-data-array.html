@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arraykosong = [];
+        let arrayNama = ["Faqih", "Imel"];
+
+        const nama = [];
+        nama.push("Faqih");
+        nama.push("Ame", "Faqih");
+        console.table(nama);
+
+        // Operasi Pada Array
+        // array.push(value) = Menambahkan data ke array
+        // array.length = untuk mendapatkan panjang array
+        // array[index] = mendapatkan data di posisi index
+        // data[index]=value = untuk mengubah data di posisi index
+        // delete array [index] untuk menghapus data di posisi index, namun index tidak bergeser
+
+        console.info(nama[0]);
+
+        nama[0]= "Abdullah";
+        nama[1] = "Ameeee";
+
+        console.table(nama);
+        delete nama[1];
+
+        console.table(nama);
+
+        nama.push("Faqih Lagi");
+        console.table(nama);
+
+        nama[1]= "Diubah Lagi";
+        console.table(nama);
+    </script>
+</body>
+</html>
