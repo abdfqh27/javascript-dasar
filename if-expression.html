@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Expression</title>
+</head>
+<body>
+    <script>
+        // Meminta input nilai dari pengguna
+        let nilai = prompt("Masukkan nilai Anda:");
+
+        // Mengonversi input menjadi angka (karena prompt mengembalikan string)
+        nilai = parseFloat(nilai);
+
+        // Mengecek kondisi menggunakan if, else if, dan else
+        if (nilai >= 90) {
+            console.log("Nilai Anda A");
+        } else if (nilai >= 80) {
+            console.log("Nilai Anda B");
+        } else if (nilai >= 70) {
+            console.log("Nilai Anda C");
+        } else if (nilai >= 60) {
+            console.log("Nilai Anda D");
+        } else if (nilai >= 0) {
+            console.log("Nilai Anda E");
+        } else {
+            console.log("Nilai yang dimasukkan tidak valid.");
+        }
+    </script>
+    <h1></h1>
+</body>
+</html>

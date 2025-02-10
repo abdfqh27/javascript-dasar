@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const nama ={}; // object
+
+        // Menambahkan atau mengubah properti / atribute pada object
+        nama["nama"] = "Abdullah Faqih";
+        nama["umur"] = 21;
+        nama["alamat"] = "Cirebon"
+
+        console.table(nama);
+
+        // Menghapus
+        delete nama["alamat"];
+
+        console.table(nama);
+
+        const orang = {
+            "nama lengkap" : "Abdulah Faqih",
+            alamat: "Cirebon",
+            umur : 21,
+        };
+        console.table(orang);
+
+        // Cara untuk mengakses property nya
+        console.info(`Nama Lengkap : ${orang["nama lengkap"]}`);
+        console.info(`Alamat : ${orang.alamat}`);
+        console.info(`Umur : ${orang.umur}`);
+    </script>
+</body>
+</html>

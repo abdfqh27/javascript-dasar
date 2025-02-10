@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaksi Popup Menarik</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contoh Interaksi Popup</h1>
+        <button onclick="mulaiInteraksi()">Mulai Interaksi</button>
+    </div>
+
+    <script>
+        // Alert = memberi peringakatn berupa popup text di browser
+        // prompt = digunakan untuk meminta input strting dari pengguna di browser
+        // confirm digunakan untuk meminta input bolean dari dari pengggna 
+        
+        function mulaiInteraksi() {
+            // Alert untuk menyapa pengguna
+            alert("Halo! Selamat datang di contoh interaksi popup.");
+
+            // Prompt untuk meminta nama pengguna
+            let nama = prompt("Masukkan nama Anda:");
+            if (nama) {
+                alert(`Halo, ${nama}! Senang bertemu dengan Anda.`);
+            } else {
+                alert("Anda tidak memasukkan nama. Tidak apa-apa, mari lanjutkan!");
+            }
+
+            // Confirm untuk meminta konfirmasi
+            let sukaJavaScript = confirm("Apakah Anda menyukai JavaScript?");
+            if (sukaJavaScript) {
+                alert("Hebat! JavaScript adalah bahasa yang sangat menyenangkan.");
+            } else {
+                alert("Oh, tidak masalah! Semoga Anda bisa menyukainya nanti.");
+            }
+
+            // Prompt untuk meminta usia
+            let usia = prompt("Berapa usia Anda?");
+            if (usia) {
+                if (usia >= 18) {
+                    alert("Anda sudah dewasa. Selamat menikmati hidup!");
+                } else {
+                    alert("Anda masih muda. Tetap semangat belajar!");
+                }
+            } else {
+                alert("Anda tidak memasukkan usia. Tidak apa-apa, tetap semangat!");
+            }
+
+            // Confirm untuk mengakhiri interaksi
+            let selesai = confirm("Apakah Anda ingin mengakhiri interaksi ini?");
+            if (selesai) {
+                alert("Terima kasih telah berinteraksi! Sampai jumpa lagi.");
+            } else {
+                alert("Baiklah, mari kita lanjutkan!");
+            }
+        }
+    </script>
+</body>
+</html>
